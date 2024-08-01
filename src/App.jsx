@@ -22,6 +22,7 @@ function Count() {
 }
 
 function CountRenderer() {
+  // useRecoilValue instead of useRecoil state has more performance benifits
   const count = useRecoilValue(countAtom);
   
   return <div>
